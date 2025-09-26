@@ -10,4 +10,6 @@ My solutions to the tutorials of [SQLZOO website](https://sqlzoo.net/wiki/SQL_Tu
 
 📝 [SELECT from Nobel](https://github.com/MartaReb/SQL-ZOO/blob/main/3_SELECT_from_Nobel.sql)
 
-📝 [SELECT within SELECT](https://github.com/MartaReb/SQL-ZOO/blob/main/4_SELECT_from_SELECT.sql)
+📝 [SELECT within SELECT](https://github.com/MartaReb/SQL-ZOO/blob/main/4_SELECT_within_SELECT.sql)
+
+📝 [SUM and COUNT](https://github.com/MartaReb/SQL-ZOO/blob/main/5_SUM_and_COUNT.sql)
