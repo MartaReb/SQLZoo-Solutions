@@ -13,3 +13,5 @@ My solutions to the tutorials of [SQLZOO website](https://sqlzoo.net/wiki/SQL_Tu
 📝 [SELECT within SELECT](https://github.com/MartaReb/SQL-ZOO/blob/main/4_SELECT_within_SELECT.sql)
 
 📝 [SUM and COUNT](https://github.com/MartaReb/SQL-ZOO/blob/main/5_SUM_and_COUNT.sql)
+
+📝 [The JOIN operation](https://github.com/MartaReb/SQL-ZOO/blob/main/6_The%20JOIN%20operation.sql)
