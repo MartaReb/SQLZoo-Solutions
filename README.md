@@ -8,7 +8,10 @@ The goal of this project is to strengthen my SQL skills through hands-on exercis
 - Understand database structures and relationships  
 - Learn how to retrieve, filter, and manipulate data  
 - Build a reference of SQL examples for future projects
-  
+
+---
+
+## 🧩 Topics Covered
 
 📝 [SELECT basics](https://github.com/MartaReb/SQL-ZOO/blob/main/0_SELECT_basics.sql)
 
@@ -24,5 +27,7 @@ The goal of this project is to strengthen my SQL skills through hands-on exercis
 
 📝 [The JOIN operation](https://github.com/MartaReb/SQL-ZOO/blob/main/6_The%20JOIN%20operation.sql)
 
+
+---
 
 > _“Practice makes queries perfect.”_ 🧩
