@@ -1,6 +1,13 @@
-# SQL-ZOO
+# 🐘 SQLZoo Solutions
 
-My solutions to the tutorials of [SQLZOO website](https://sqlzoo.net/wiki/SQL_Tutorial) with MySQL engine.
+This repository contains my solutions from practicing SQL on [**SQLZoo.net**](https://sqlzoo.net/).  
+The goal of this project is to strengthen my SQL skills through hands-on exercises and query building, using real database examples.
+
+## 🎯 Goals
+- Practice writing efficient SQL queries  
+- Understand database structures and relationships  
+- Learn how to retrieve, filter, and manipulate data  
+- Build a reference of SQL examples for future projects  
 
 📝 [SELECT basics](https://github.com/MartaReb/SQL-ZOO/blob/main/0_SELECT_basics.sql)
 
@@ -15,3 +22,5 @@ My solutions to the tutorials of [SQLZOO website](https://sqlzoo.net/wiki/SQL_Tu
 📝 [SUM and COUNT](https://github.com/MartaReb/SQL-ZOO/blob/main/5_SUM_and_COUNT.sql)
 
 📝 [The JOIN operation](https://github.com/MartaReb/SQL-ZOO/blob/main/6_The%20JOIN%20operation.sql)
+
+> _“Practice makes queries perfect.”_ 🧩
