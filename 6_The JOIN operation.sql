@@ -58,3 +58,48 @@ FROM game
 JOIN goal 
 ON goal.matchid = game.id
 WHERE (game.team1 = 'GER' OR game.team2 = 'GER') AND goal.teamid != 'GER';
+
+--9. Show teamname and the total number of goals scored.
+
+SELECT eteam.teamname, COUNT(goal.teamid)
+FROM eteam 
+JOIN goal
+ON eteam.id = goal.teamid
+GROUP BY eteam.teamname;
+
+--10. Show the stadium and the number of goals scored in each stadium.
+
+SELECT game.stadium, COUNT(goal.teamid)
+FROM game
+JOIN goal
+ON game.id = goal.matchid
+GROUP BY game.stadium;
+
+--11. For every match involving 'POL', show the matchid, date and the number of goals scored.
+
+SELECT goal.matchid, game.mdate, COUNT(goal.teamid)
+FROM game
+JOIN goal
+ON goal.matchid = game.id
+WHERE (game.team1 = 'POL' OR game.team2 = 'POL')
+GROUP BY goal.matchid, game.mdate;
+
+--12. For every match where 'GER' scored, show matchid, match date and the number of goals scored by 'GER'.
+
+SELECT goal.matchid, game.mdate, COUNT(goal.teamid)
+FROM game
+JOIN goal
+ON game.id = goal.matchid
+WHERE goal.teamid = 'GER'
+GROUP BY goal.matchid, game.mdate;
+
+--13. List every match with the goals scored by each team as shown.Sort your result by mdate, matchid, team1 and team2.
+
+SELECT game.mdate, game.team1,
+SUM(CASE WHEN goal.teamid = game.team1 THEN 1 ELSE 0 END) score1,
+game.team2,
+SUM(CASE WHEN goal.teamid = game.team2 THEN 1 ELSE 0 END) score2
+FROM game
+LEFT JOIN goal
+ON goal.matchid = game.id
+GROUP BY game.mdate, goal.matchid, game.team1, game.team2;
