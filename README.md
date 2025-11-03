@@ -27,7 +27,7 @@ The goal of this project is to strengthen my SQL skills through hands-on exercis
 
 📝 [The JOIN operation](https://github.com/MartaReb/SQL-ZOO/blob/main/6_The%20JOIN%20operation.sql)
 
-
+📝 [More JOIN operations](https://github.com/MartaReb/SQLZoo-Solutions/blob/main/7_More%20JOIN%20operations.sql)
 ---
 
 > _“Practice makes queries perfect.”_ 🧩
