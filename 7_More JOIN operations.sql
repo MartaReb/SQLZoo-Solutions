@@ -29,3 +29,42 @@ SELECT id
 FROM movie	
 WHERE title = 'Casablanca'
 AND yr = 1942;	
+
+--6. Obtain the cast list for 'Casablanca'.
+
+SELECT actor.name
+FROM actor
+JOIN casting
+ON casting.actorid = actor.id
+WHERE casting.movieid = 132689;
+
+--7. Obtain the cast list for the film 'Alien'.
+
+SELECT actor.name
+FROM movie
+JOIN casting
+ON movie.id = casting.movieid
+JOIN actor
+ON casting.actorid = actor.id
+WHERE movie.title = 'Alien';
+
+--8. List the films in which 'Harrison Ford' has appeared.
+
+SELECT movie.title
+FROM movie
+JOIN casting
+ON casting.movieid = movie.id
+JOIN actor
+ON actor.id = casting.actorid
+WHERE actor.name = 'Harrison Ford';
+
+--9. List the films where 'Harrison Ford' has appeared - but not in the starring role.
+
+SELECT DISTINCT movie.title
+FROM movie
+JOIN casting
+ON casting.movieid = movie.id
+JOIN actor
+ON actor.id = casting.actorid
+WHERE actor.name = 'Harrison Ford'
+AND casting.ord != 1;
