@@ -68,3 +68,42 @@ JOIN actor
 ON actor.id = casting.actorid
 WHERE actor.name = 'Harrison Ford'
 AND casting.ord != 1;
+
+--10. List the films together with the leading star for all 1962 films.	
+	
+SELECT movie.title, actor.name	
+FROM movie	
+JOIN casting	
+ON casting.movieid = movie.id	
+JOIN actor	
+ON actor.id = casting.actorid	
+WHERE movie.yr = 1962	
+AND casting.ord = 1;	
+
+--Harder Questions
+--11. Which were the busiest years for 'Rock Hudson', show the year and the number of movies he made each year for any year in which he made more than 2 movies.
+
+SELECT m.yr,COUNT(m.title) 
+FROM movie m
+JOIN casting c
+ON m.id=c.movieid
+JOIN actor a 
+ON c.actorid=a.id
+WHERE a.name='Rock Hudson'
+GROUP BY m.yr
+HAVING COUNT(m.title) > 2;
+
+--12. List the film title and the leading actor for all of the films 'Julie Andrews' played in.
+
+SELECT m.title, a.name
+FROM movie m
+JOIN casting c
+ON c.movieid = m.id and ord = 1
+JOIN actor a
+ON a.id = c.actorid 
+WHERE m.id IN (
+SELECT movieid FROM casting
+WHERE actorid IN (
+SELECT id
+FROM actor
+WHERE name='Julie Andrews'));
