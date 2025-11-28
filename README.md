@@ -31,6 +31,8 @@ The goal of this project is to strengthen my SQL skills through hands-on exercis
 
 📝 [Using Null](https://github.com/MartaReb/SQLZoo-Solutions/blob/main/8_Using%20Null.sql)
 
+📝 [Numeric Examples](https://github.com/MartaReb/SQLZoo-Solutions/blob/main/8%2B_Numeric%20examples.sql)
+
 ---
 
 > _“Practice makes queries perfect.”_ 🧩
