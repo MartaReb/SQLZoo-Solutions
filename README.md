@@ -33,6 +33,9 @@ The goal of this project is to strengthen my SQL skills through hands-on exercis
 
 📝 [Numeric Examples](https://github.com/MartaReb/SQLZoo-Solutions/blob/main/8%2B_Numeric%20examples.sql)
 
+📝 [Window functions](https://github.com/MartaReb/SQLZoo-Solutions/blob/main/9_Window%20functions.sql)
+
+
 ---
 
 > _“Practice makes queries perfect.”_ 🧩
